@@ -1,0 +1,56 @@
+/etc/host.conf: line 4: bad command `151.101.76.133 raw.githubusercontent.com '
+Some weights of the model checkpoint at hfl/chinese-bert-wwm-ext were not used when initializing BertModel: ['cls.predictions.transform.dense.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.bias', 'cls.predictions.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.transform.LayerNorm.bias', 'cls.predictions.decoder.weight', 'cls.seq_relationship.weight']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+数据大小： (147, 10)
+GPU available: True (cuda), used: False
+TPU available: False, using: 0 TPU cores
+IPU available: False, using: 0 IPUs
+HPU available: False, using: 0 HPUs
+/opt/conda/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py:1766: PossibleUserWarning: GPU available but not used. Set `accelerator` and `devices` using `Trainer(accelerator='gpu', devices=8)`.
+  rank_zero_warn(
+/opt/conda/lib/python3.8/site-packages/pytorch_lightning/trainer/configuration_validator.py:115: UserWarning: You passed in a `val_dataloader` but have no `validation_step`. Skipping val loop.
+  rank_zero_warn("You passed in a `val_dataloader` but have no `validation_step`. Skipping val loop.")
+
+  | Name       | Type      | Params
+-----------------------------------------
+0 | pretrained | BertModel | 102 M 
+1 | NER        | NER       | 105 M 
+-----------------------------------------
+105 M     Trainable params
+0         Non-trainable params
+105 M     Total params
+423.266   Total estimated model params size (MB)
+/opt/conda/lib/python3.8/site-packages/pytorch_lightning/trainer/connectors/data_connector.py:219: PossibleUserWarning: The dataloader, train_dataloader, does not have many workers which may be a bottleneck. Consider increasing the value of the `num_workers` argument` (try 40 which is the number of cpus on this machine) in the `DataLoader` init to improve performance.
+  rank_zero_warn(
+/opt/conda/lib/python3.8/site-packages/pytorch_lightning/trainer/trainer.py:1894: PossibleUserWarning: The number of training batches (7) is smaller than the logging interval Trainer(log_every_n_steps=50). Set a lower value for log_every_n_steps if you want to see logs for the training epoch.
+  rank_zero_warn(
+Training: 0it [00:00, ?it/s]Training:   0%|          | 0/7 [00:00<?, ?it/s]Epoch 0:   0%|          | 0/7 [00:00<?, ?it/s] train_loss tensor(1.9325, grad_fn=<NllLossBackward0>)
+Epoch 0:  14%|█▍        | 1/7 [00:11<01:08, 11.43s/it]Epoch 0:  14%|█▍        | 1/7 [00:11<01:08, 11.43s/it, loss=1.93, v_num=5]train_loss tensor(1.6683, grad_fn=<NllLossBackward0>)
+Epoch 0:  29%|██▊       | 2/7 [00:23<00:58, 11.69s/it, loss=1.93, v_num=5]Epoch 0:  29%|██▊       | 2/7 [00:23<00:58, 11.69s/it, loss=1.8, v_num=5] train_loss tensor(1.8733, grad_fn=<NllLossBackward0>)
+Epoch 0:  43%|████▎     | 3/7 [00:37<00:50, 12.58s/it, loss=1.8, v_num=5]Epoch 0:  43%|████▎     | 3/7 [00:37<00:50, 12.58s/it, loss=1.82, v_num=5]train_loss tensor(1.7145, grad_fn=<NllLossBackward0>)
+Epoch 0:  57%|█████▋    | 4/7 [00:50<00:37, 12.56s/it, loss=1.82, v_num=5]Epoch 0:  57%|█████▋    | 4/7 [00:50<00:37, 12.56s/it, loss=1.8, v_num=5] train_loss tensor(1.6115, grad_fn=<NllLossBackward0>)
+Epoch 0:  71%|███████▏  | 5/7 [00:58<00:23, 11.78s/it, loss=1.8, v_num=5]Epoch 0:  71%|███████▏  | 5/7 [00:58<00:23, 11.78s/it, loss=1.76, v_num=5]train_loss tensor(1.7232, grad_fn=<NllLossBackward0>)
+Epoch 0:  86%|████████▌ | 6/7 [01:08<00:11, 11.35s/it, loss=1.76, v_num=5]Epoch 0:  86%|████████▌ | 6/7 [01:08<00:11, 11.35s/it, loss=1.75, v_num=5]train_loss tensor(1.5807, grad_fn=<NllLossBackward0>)
+Epoch 0: 100%|██████████| 7/7 [01:17<00:00, 11.06s/it, loss=1.75, v_num=5]Epoch 0: 100%|██████████| 7/7 [01:17<00:00, 11.06s/it, loss=1.73, v_num=5]Epoch 0: 100%|██████████| 7/7 [01:17<00:00, 11.06s/it, loss=1.73, v_num=5]Epoch 0:   0%|          | 0/7 [00:00<?, ?it/s, loss=1.73, v_num=5]        Epoch 1:   0%|          | 0/7 [00:00<?, ?it/s, loss=1.73, v_num=5]train_loss tensor(1.5858, grad_fn=<NllLossBackward0>)
+Epoch 1:  14%|█▍        | 1/7 [00:09<00:54,  9.01s/it, loss=1.73, v_num=5]Epoch 1:  14%|█▍        | 1/7 [00:09<00:54,  9.01s/it, loss=1.71, v_num=5]train_loss tensor(1.7364, grad_fn=<NllLossBackward0>)
+Epoch 1:  29%|██▊       | 2/7 [00:22<00:56, 11.32s/it, loss=1.71, v_num=5]Epoch 1:  29%|██▊       | 2/7 [00:22<00:56, 11.32s/it, loss=1.71, v_num=5]train_loss tensor(1.6472, grad_fn=<NllLossBackward0>)
+Epoch 1:  43%|████▎     | 3/7 [00:43<00:57, 14.47s/it, loss=1.71, v_num=5]Epoch 1:  43%|████▎     | 3/7 [00:43<00:57, 14.47s/it, loss=1.71, v_num=5]train_loss tensor(1.6845, grad_fn=<NllLossBackward0>)
+Epoch 1:  57%|█████▋    | 4/7 [00:59<00:44, 14.90s/it, loss=1.71, v_num=5]Epoch 1:  57%|█████▋    | 4/7 [00:59<00:44, 14.91s/it, loss=1.71, v_num=5]train_loss tensor(1.8355, grad_fn=<NllLossBackward0>)
+Epoch 1:  71%|███████▏  | 5/7 [01:12<00:29, 14.55s/it, loss=1.71, v_num=5]Epoch 1:  71%|███████▏  | 5/7 [01:12<00:29, 14.55s/it, loss=1.72, v_num=5]train_loss tensor(1.6174, grad_fn=<NllLossBackward0>)
+Epoch 1:  86%|████████▌ | 6/7 [01:23<00:13, 13.96s/it, loss=1.72, v_num=5]Epoch 1:  86%|████████▌ | 6/7 [01:23<00:13, 13.96s/it, loss=1.71, v_num=5]train_loss tensor(1.5588, grad_fn=<NllLossBackward0>)
+Epoch 1: 100%|██████████| 7/7 [01:42<00:00, 14.66s/it, loss=1.71, v_num=5]Epoch 1: 100%|██████████| 7/7 [01:42<00:00, 14.66s/it, loss=1.7, v_num=5] Epoch 1: 100%|██████████| 7/7 [01:42<00:00, 14.66s/it, loss=1.7, v_num=5]Epoch 1:   0%|          | 0/7 [00:00<?, ?it/s, loss=1.7, v_num=5]        Epoch 2:   0%|          | 0/7 [00:00<?, ?it/s, loss=1.7, v_num=5]train_loss tensor(1.6827, grad_fn=<NllLossBackward0>)
+Epoch 2:  14%|█▍        | 1/7 [00:09<00:58,  9.78s/it, loss=1.7, v_num=5]Epoch 2:  14%|█▍        | 1/7 [00:09<00:58,  9.78s/it, loss=1.7, v_num=5]train_loss tensor(1.6345, grad_fn=<NllLossBackward0>)
+Epoch 2:  29%|██▊       | 2/7 [00:19<00:47,  9.50s/it, loss=1.7, v_num=5]Epoch 2:  29%|██▊       | 2/7 [00:19<00:47,  9.50s/it, loss=1.69, v_num=5]train_loss tensor(1.5198, grad_fn=<NllLossBackward0>)
+Epoch 2:  43%|████▎     | 3/7 [00:28<00:37,  9.44s/it, loss=1.69, v_num=5]Epoch 2:  43%|████▎     | 3/7 [00:28<00:37,  9.44s/it, loss=1.68, v_num=5]train_loss tensor(1.7000, grad_fn=<NllLossBackward0>)
+Epoch 2:  57%|█████▋    | 4/7 [00:36<00:27,  9.06s/it, loss=1.68, v_num=5]Epoch 2:  57%|█████▋    | 4/7 [00:36<00:27,  9.06s/it, loss=1.68, v_num=5]train_loss tensor(1.7983, grad_fn=<NllLossBackward0>)
+Epoch 2:  71%|███████▏  | 5/7 [00:43<00:17,  8.78s/it, loss=1.68, v_num=5]Epoch 2:  71%|███████▏  | 5/7 [00:43<00:17,  8.78s/it, loss=1.69, v_num=5]train_loss tensor(1.5114, grad_fn=<NllLossBackward0>)
+Epoch 2:  86%|████████▌ | 6/7 [00:51<00:08,  8.62s/it, loss=1.69, v_num=5]Epoch 2:  86%|████████▌ | 6/7 [00:51<00:08,  8.62s/it, loss=1.68, v_num=5]train_loss tensor(1.7086, grad_fn=<NllLossBackward0>)
+Epoch 2: 100%|██████████| 7/7 [01:00<00:00,  8.57s/it, loss=1.68, v_num=5]Epoch 2: 100%|██████████| 7/7 [01:00<00:00,  8.57s/it, loss=1.67, v_num=5]Epoch 2: 100%|██████████| 7/7 [01:00<00:00,  8.57s/it, loss=1.67, v_num=5]`Trainer.fit` stopped: `max_epochs=3` reached.
+Epoch 2: 100%|██████████| 7/7 [01:01<00:00,  8.72s/it, loss=1.67, v_num=5]2022/08/27 11:02:10 WARNING mlflow.utils.requirements_utils: Found torch version (1.12.0+cu113) contains a local version label (+cu113). MLflow logged a pip requirement for this package as 'torch==1.12.0' without the local version label to make it installable from PyPI. To specify pip requirements containing local version labels, please use `conda_env` or `pip_requirements`.
+huggingface/tokenizers: The current process just got forked, after parallelism has already been used. Disabling parallelism to avoid deadlocks...
+To disable this warning, you can either:
+	- Avoid using `tokenizers` before the fork if possible
+	- Explicitly set the environment variable TOKENIZERS_PARALLELISM=(true | false)
+
+training has been ended

@@ -1,0 +1,5 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "train.py", line 42, in <module>
+    mlflow.auto_log()
+AttributeError: module 'mlflow' has no attribute 'auto_log'

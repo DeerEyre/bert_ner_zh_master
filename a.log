@@ -1,0 +1,21 @@
+nohup: ignoring input
+/etc/host.conf: line 4: bad command `151.101.76.133 raw.githubusercontent.com '
+Some weights of the model checkpoint at hfl/chinese-bert-wwm-ext were not used when initializing BertModel: ['cls.predictions.transform.LayerNorm.bias', 'cls.predictions.transform.LayerNorm.weight', 'cls.predictions.decoder.weight', 'cls.predictions.transform.dense.bias', 'cls.seq_relationship.bias', 'cls.predictions.transform.dense.weight', 'cls.seq_relationship.weight', 'cls.predictions.bias']
+- This IS expected if you are initializing BertModel from the checkpoint of a model trained on another task or with another architecture (e.g. initializing a BertForSequenceClassification model from a BertForPreTraining model).
+- This IS NOT expected if you are initializing BertModel from the checkpoint of a model that you expect to be exactly identical (initializing a BertForSequenceClassification model from a BertForSequenceClassification model).
+数据大小： (147, 10)
+The length of dataset is  147
+The number of batchs are  4
+模型参数量为 10581.6583 万.
+0it [00:00, ?it/s]1it [00:18, 18.00s/it]2it [00:34, 17.35s/it]3it [00:52, 17.40s/it]4it [01:09, 17.26s/it]4it [01:09, 17.35s/it]
+outs shape =  torch.Size([6491])
+outs =  tensor([2, 0, 0, 0, 0, 5, 0, 0, 0, 0, 0, 4, 0, 0, 0, 0, 4, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 0, 0, 0,
+        0, 2, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 5, 5, 0, 0, 0, 2, 0, 0, 0, 2, 2, 0, 0, 0,
+        0, 0, 2, 5, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 0, 2, 0, 0, 0, 0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 2, 0,
+        0, 0, 0, 0, 0, 0, 2, 2, 5, 5, 5, 5, 5, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+        0, 0, 2, 0, 0, 0, 0, 0])
+epoch= 0  step= 0  loss= 1.9275740385055542  accuracy= 0.44492374056385764  accuracy_content= 0.028334925183062718
